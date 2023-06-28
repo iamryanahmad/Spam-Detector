@@ -2,4 +2,3 @@ scikit-learn
 nltk
 streamlit
 streamlit-lottie
-json
