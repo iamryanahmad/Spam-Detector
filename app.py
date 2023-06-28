@@ -3,6 +3,7 @@ import pickle
 import sklearn
 import string
 import nltk
+nltk.download('popular')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
