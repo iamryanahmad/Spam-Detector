@@ -62,6 +62,10 @@ if st.button("Predict"):
     else:
         st.subheader("NOT SPAM")
 
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+
 
 lottie_coding = load_lottiefile('124955-notifications.json')
 st_lottie(lottie_coding)
