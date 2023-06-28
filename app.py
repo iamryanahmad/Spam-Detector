@@ -48,7 +48,7 @@ model = pickle.load(open('model.pkl','rb'))
 
 st.title('EMAIL/SMS SPAM CLASSIFIER')
 
-input_sms = st.text_input("Please the Email/SMS text below")
+input_sms = st.text_input("Please enter the Email/SMS text below")
 
 if st.button("Check"):
     transformed_sms = text_transformer(input_sms)
