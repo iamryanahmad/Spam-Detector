@@ -2,10 +2,12 @@ import streamlit as st
 import pickle
 import sklearn
 import string
+import json
 import nltk
 nltk.download('popular')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+from streamlit_lottie import st_lottie
 
 # Preprocessing new email/sms
 
@@ -59,3 +61,7 @@ if st.button("Predict"):
         st.subheader("SPAM ALERT!")
     else:
         st.subheader("NOT SPAM")
+
+
+lottie_coding = load_lottiefile('124955-notifications.json')
+st_lottie(lottie_coding)
