@@ -50,7 +50,7 @@ st.title('EMAIL/SMS SPAM CLASSIFIER')
 
 input_sms = st.text_input("Please the Email/SMS text below")
 
-if st.button("Predict"):
+if st.button("Check"):
     transformed_sms = text_transformer(input_sms)
     # Vectorize
     vector_input = tfidf.transform([transformed_sms])
