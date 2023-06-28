@@ -1,7 +1,5 @@
-import streamlit
-import pickle
-import sklearn
-import string
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
+streamlit
+pickle
+sklearn
+string
+nltk
