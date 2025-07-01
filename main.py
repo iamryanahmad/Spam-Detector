@@ -7,9 +7,17 @@ import sklearn
 import string
 import json
 import nltk
-nltk.download('popular')
 from nltk.corpus import stopwords
+import nltk
+from nltk.corpus import stopwords
+
+# Ensure stopwords are downloaded
+try:
+    stopwords.words('english')
+except LookupError:
+    nltk.download('stopwords')
 from nltk.stem.porter import PorterStemmer
+
 
 app = FastAPI(
     title = "Spam Detector",
