@@ -52,8 +52,8 @@ def text_transformer(text):
 
 ps = PorterStemmer()
 
-tfidf = pickle.load(open('/Users/ahmad/Documents/GitHub/Spam-Detector/vectorizer.pkl','rb'))
-model = pickle.load(open('/Users/ahmad/Documents/GitHub/Spam-Detector/model.pkl','rb'))
+tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 @app.post("/predict")
 def make_predictions(sms: SMS):
